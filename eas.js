@@ -9,10 +9,10 @@ let text;
 let newDiv;
 const wrapper = document.getElementById('grid-container');
 
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 256; i++) {
     newDiv = document.createElement("div");
     text = document.createTextNode(`new div ${i + 1}`);
     newDiv.appendChild(text);
-    newDiv.classList.add("grid-item");
+    newDiv.setAttribute("id", "grid-item");
     wrapper.appendChild(newDiv);
 }
