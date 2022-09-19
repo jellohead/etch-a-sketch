@@ -18,7 +18,7 @@ for (let i = 0; i < 256; i++) {
     newDiv.setAttribute("id", "grid-item");
     wrapper.appendChild(newDiv);
     newDiv.addEventListener('mouseover', e => {
-        e.target.style.color = 'red';
+        e.target.style.backgroundColor = 'red';
     });
 }
 
