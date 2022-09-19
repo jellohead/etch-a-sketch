@@ -1,1 +1,5 @@
 /* style.css */
+
+#grid-container {
+    display: grid;
+}
