@@ -22,5 +22,17 @@ for (let i = 0; i < 256; i++) {
 
 buttonItem.addEventListener('click', e => {
     let response = prompt('Enter number of squares per side you want (100 max)');
-    console.log(response)
+    console.log('prompt response = ' + response);
+
+    //remove child nodes grid-item
+    const container = document.querySelector('#grid-container');
+    removeAllChildNodes(container);
+
 })
+
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
