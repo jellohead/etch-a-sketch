@@ -4,7 +4,7 @@ const body = document.body;
 console.log("Hello world");
 let text;
 let newDiv;
-const wrapper = document.getElementById('grid-container');
+const wrapper = document.querySelector('#grid-container');
 let gItems;
 let buttonItem = document.getElementById('btn');
 
@@ -25,8 +25,9 @@ buttonItem.addEventListener('click', e => {
     console.log('prompt response = ' + response);
 
     //remove child nodes grid-item
-    const container = document.querySelector('#grid-container');
-    removeAllChildNodes(container);
+    removeAllChildNodes(wrapper);
+
+
 
 })
 
